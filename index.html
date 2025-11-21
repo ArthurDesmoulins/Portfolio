@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio ***</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100">
+    <!-- Header -->
+    <header
+      class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50"
+    >
+      <div
+        class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <a href="index.html" class="font-semibold tracking-tight text-lg">
+          <span class="text-emerald-400">/***</span> Portfolio
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="index.html" class="text-emerald-400 font-medium">Accueil</a>
+          <a href="projects.html" class="hover:text-emerald-400 transition"
+            >Projets</a
+          >
+          <a href="#contact" class="hover:text-emerald-400 transition"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Mobile menu button -->
+        <button
+          id="menuBtn"
+          class="md:hidden inline-flex items-center justify-center rounded-lg border border-slate-700 px-2 py-1 text-xs"
+        >
+          Menu
+        </button>
+      </div>
+
+      <!-- Mobile nav -->
+      <nav
+        id="mobileNav"
+        class="md:hidden hidden border-t border-slate-800 bg-slate-950"
+      >
+        <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
+          <a href="index.html" class="text-emerald-400 font-medium">Accueil</a>
+          <a href="projects.html" class="hover:text-emerald-400 transition"
+            >Projets</a
+          >
+          <a href="#contact" class="hover:text-emerald-400 transition"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="max-w-5xl mx-auto px-4 pt-10 pb-16 space-y-24">
+      <!-- Hero -->
+      <section class="grid gap-10 md:grid-cols-[1.3fr,1fr] items-center">
+        <div class="space-y-6">
+          <p
+            class="text-xs font-medium uppercase tracking-[0.25em] text-emerald-400/80"
+          >
+            Portfolio
+          </p>
+          <h1
+            class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight"
+          >
+            Bonjour, je suis <span class="text-emerald-400">***</span><br />
+            <span class="text-slate-300"
+              >*** (ton rôle : développeur web, étudiant, etc.)</span
+            >
+          </h1>
+          <p
+            class="text-sm md:text-base text-slate-300 leading-relaxed max-w-xl"
+          >
+            Ici tu peux écrire une courte description : *** (par ex :
+            “Développeur front-end passionné par les interfaces propres, l’UX et
+            les technologies modernes comme React, Tailwind CSS et TypeScript.”)
+          </p>
+
+          <div class="flex flex-wrap gap-3">
+            <a
+              href="projects.html"
+              class="inline-flex items-center gap-2 rounded-xl bg-emerald-500 px-5 py-2.5 text-sm font-medium text-slate-950 hover:bg-emerald-400 transition"
+            >
+              Voir mes projets
+            </a>
+            <a
+              href="***"
+              class="inline-flex items-center gap-2 rounded-xl border border-slate-700 px-5 py-2.5 text-sm font-medium hover:border-emerald-400 hover:text-emerald-400 transition"
+            >
+              Télécharger mon CV
+            </a>
+          </div>
+
+          <div class="flex flex-wrap gap-3 text-xs text-slate-400">
+            <span class="px-3 py-1 rounded-full border border-slate-700/80">
+              Basé à *** (ville/pays)
+            </span>
+            <span class="px-3 py-1 rounded-full border border-slate-700/80">
+              Disponible pour *** (stage / alternance / freelance)
+            </span>
+          </div>
+        </div>
+
+        <!-- Carte profil -->
+        <div class="relative">
+          <div
+            class="rounded-3xl border border-slate-800 bg-slate-900/60 p-6 shadow-xl"
+          >
+            <div
+              class="h-24 w-24 rounded-2xl bg-gradient-to-tr from-emerald-500 to-cyan-400 mb-4 mx-auto"
+            ></div>
+            <h2 class="text-center text-lg font-semibold mb-1">***</h2>
+            <p class="text-center text-xs text-slate-400 mb-4">
+              *** (par ex : “Développeur Front-End”)
+            </p>
+            <div class="space-y-3 text-xs">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Email</span>
+                <a href="mailto:***" class="text-emerald-400 hover:underline"
+                  >***</a
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">GitHub</span>
+                <a href="***" class="text-emerald-400 hover:underline">***</a>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">LinkedIn</span>
+                <a href="***" class="text-emerald-400 hover:underline">***</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- À propos -->
+      <section id="about" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold flex items-center gap-2">
+          <span class="h-7 w-1.5 rounded-full bg-emerald-400"></span>
+          À propos de moi
+        </h2>
+        <div class="grid gap-8 md:grid-cols-2">
+          <p class="text-sm md:text-base text-slate-300 leading-relaxed">
+            *** (paragraphe de présentation : ton parcours, ce que tu aimes
+            faire, pourquoi tu codes, etc.)
+          </p>
+          <p class="text-sm md:text-base text-slate-300 leading-relaxed">
+            *** (second paragraphe : ce que tu cherches actuellement, dans quel
+            type de projets tu veux t’investir, etc.)
+          </p>
+        </div>
+      </section>
+
+      <!-- Compétences -->
+      <section id="skills" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold flex items-center gap-2">
+          <span class="h-7 w-1.5 rounded-full bg-emerald-400"></span>
+          Compétences
+        </h2>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <div
+            class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 space-y-3"
+          >
+            <h3 class="text-sm font-semibold text-slate-100">Front-End</h3>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="px-2.5 py-1 rounded-full bg-slate-800/80">HTML</span>
+              <span class="px-2.5 py-1 rounded-full bg-slate-800/80">CSS</span>
+              <span class="px-2.5 py-1 rounded-full bg-slate-800/80"
+                >JavaScript</span
+              >
+              <span class="px-2.5 py-1 rounded-full bg-slate-800/80"
+                >Tailwind CSS</span
+              >
+              <span class="px-2.5 py-1 rounded-full bg-slate-800/80"
+                >React ***</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 space-y-3"
+          >
+            <h3 class="text-sm font-semibold text-slate-100">
+              Back-End / Outils
+            </h3>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="px-2.5 py-1 rounded-full bg-slate-800/80"
+                >Node.js ***</span
+              >
+              <span class="px-2.5 py-1 rounded-full bg-slate-800/80"
+                >Git &amp; GitHub</span
+              >
+              <span class="px-2.5 py-1 rounded-full bg-slate-800/80">npm</span>
+              <span class="px-2.5 py-1 rounded-full bg-slate-800/80"
+                >API REST ***</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 space-y-3"
+          >
+            <h3 class="text-sm font-semibold text-slate-100">Soft Skills</h3>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="px-2.5 py-1 rounded-full bg-slate-800/80"
+                >Autonomie</span
+              >
+              <span class="px-2.5 py-1 rounded-full bg-slate-800/80"
+                >Esprit d’équipe</span
+              >
+              <span class="px-2.5 py-1 rounded-full bg-slate-800/80"
+                >Curiosité</span
+              >
+              <span class="px-2.5 py-1 rounded-full bg-slate-800/80"
+                >Rigueur</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to action vers projets -->
+      <section
+        class="rounded-3xl border border-emerald-500/20 bg-gradient-to-r from-emerald-500/10 to-cyan-500/5 p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+      >
+        <div>
+          <h2 class="text-lg md:text-xl font-semibold mb-1">
+            Envie de voir ce que je code ?
+          </h2>
+          <p class="text-sm text-slate-300">
+            Jette un œil à une sélection de mes projets : front-end, back-end et
+            petites expérimentations.
+          </p>
+        </div>
+        <a
+          href="projects.html"
+          class="inline-flex items-center justify-center rounded-xl bg-emerald-500 px-5 py-2.5 text-sm font-medium text-slate-950 hover:bg-emerald-400 transition"
+        >
+          Voir mes projets
+        </a>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="space-y-6">
+        <h2 class="text-xl md:text-2xl font-semibold flex items-center gap-2">
+          <span class="h-7 w-1.5 rounded-full bg-emerald-400"></span>
+          Contact
+        </h2>
+
+        <div class="grid gap-8 md:grid-cols-2">
+          <p class="text-sm md:text-base text-slate-300 leading-relaxed">
+            Tu peux écrire un texte ici : *** (par ex : “N’hésite pas à me
+            contacter pour un stage, une alternance, un projet freelance ou
+            simplement pour discuter technologie !”)
+          </p>
+
+          <div
+            class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 space-y-4"
+          >
+            <div class="text-sm">
+              <p class="text-slate-400 text-xs mb-1">Email</p>
+              <a
+                href="mailto:***"
+                class="text-sm text-emerald-400 hover:underline"
+              >
+                ***
+              </a>
+            </div>
+            <div class="text-sm">
+              <p class="text-slate-400 text-xs mb-1">LinkedIn</p>
+              <a href="***" class="text-sm text-emerald-400 hover:underline">
+                ***
+              </a>
+            </div>
+            <div class="text-sm">
+              <p class="text-slate-400 text-xs mb-1">GitHub</p>
+              <a href="***" class="text-sm text-emerald-400 hover:underline">
+                ***
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800">
+      <div
+        class="max-w-5xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-slate-500"
+      >
+        <p>© *** – Portfolio construit avec Tailwind CSS.</p>
+        <p>Développé par ***.</p>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.getElementById("menuBtn");
+      const nav = document.getElementById("mobileNav");
+      if (btn && nav) {
+        btn.addEventListener("click", () => {
+          nav.classList.toggle("hidden");
+        });
+      }
+    </script>
+  </body>
+</html>

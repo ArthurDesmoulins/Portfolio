@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projets – Portfolio ***</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100">
+    <!-- Header (même que sur index) -->
+    <header
+      class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50"
+    >
+      <div
+        class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <a href="index.html" class="font-semibold tracking-tight text-lg">
+          <span class="text-emerald-400">/***</span> Portfolio
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="index.html" class="hover:text-emerald-400 transition"
+            >Accueil</a
+          >
+          <a href="projects.html" class="text-emerald-400 font-medium"
+            >Projets</a
+          >
+          <a href="index.html#contact" class="hover:text-emerald-400 transition"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Mobile menu button -->
+        <button
+          id="menuBtn"
+          class="md:hidden inline-flex items-center justify-center rounded-lg border border-slate-700 px-2 py-1 text-xs"
+        >
+          Menu
+        </button>
+      </div>
+
+      <!-- Mobile nav -->
+      <nav
+        id="mobileNav"
+        class="md:hidden hidden border-t border-slate-800 bg-slate-950"
+      >
+        <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
+          <a href="index.html" class="hover:text-emerald-400 transition"
+            >Accueil</a
+          >
+          <a href="projects.html" class="text-emerald-400 font-medium"
+            >Projets</a
+          >
+          <a href="index.html#contact" class="hover:text-emerald-400 transition"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="max-w-5xl mx-auto px-4 pt-10 pb-16 space-y-12">
+      <!-- Intro -->
+      <section class="space-y-4">
+        <p
+          class="text-xs font-medium uppercase tracking-[0.25em] text-emerald-400/80"
+        >
+          Projets
+        </p>
+        <h1 class="text-2xl md:text-3xl font-semibold">
+          Une sélection de mes projets <span class="text-emerald-400">***</span>
+        </h1>
+        <p class="text-sm md:text-base text-slate-300 max-w-2xl">
+          *** (ici tu peux décrire rapidement ton type de projets : front-end,
+          petits jeux, applications web, projets d’école, etc.)
+        </p>
+      </section>
+
+      <!-- Liste des projets -->
+      <section class="space-y-6">
+        <h2 class="text-lg md:text-xl font-semibold">Projets récents</h2>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <!-- Projet 1 -->
+          <article
+            class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-5 flex flex-col justify-between"
+          >
+            <div class="space-y-3">
+              <p class="text-xs uppercase tracking-[0.2em] text-emerald-400/80">
+                Front-End
+              </p>
+              <h3
+                class="text-base md:text-lg font-semibold group-hover:text-emerald-400 transition"
+              >
+                *** – Application de gestion de tâches
+              </h3>
+              <p class="text-sm text-slate-300">
+                *** (ex : “Une application web permettant d’organiser ses tâches
+                avec filtres, priorités et mode sombre.”)
+              </p>
+              <div class="flex flex-wrap gap-2 text-[11px] text-slate-300">
+                <span class="px-2 py-1 rounded-full bg-slate-800/80"
+                  >React</span
+                >
+                <span class="px-2 py-1 rounded-full bg-slate-800/80"
+                  >Tailwind CSS</span
+                >
+                <span class="px-2 py-1 rounded-full bg-slate-800/80"
+                  >LocalStorage</span
+                >
+              </div>
+            </div>
+            <div class="mt-4 flex items-center justify-between text-xs">
+              <a href="***" class="text-emerald-400 hover:underline">
+                Voir en ligne
+              </a>
+              <a href="***" class="text-slate-400 hover:underline">
+                Code source
+              </a>
+            </div>
+          </article>
+
+          <!-- Projet 2 -->
+          <article
+            class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-5 flex flex-col justify-between"
+          >
+            <div class="space-y-3">
+              <p class="text-xs uppercase tracking-[0.2em] text-emerald-400/80">
+                Intégration
+              </p>
+              <h3
+                class="text-base md:text-lg font-semibold group-hover:text-emerald-400 transition"
+              >
+                *** – Landing page responsive
+              </h3>
+              <p class="text-sm text-slate-300">
+                *** (description rapide du projet, ce que tu as appris, les
+                challenges, etc.)
+              </p>
+              <div class="flex flex-wrap gap-2 text-[11px] text-slate-300">
+                <span class="px-2 py-1 rounded-full bg-slate-800/80">HTML</span>
+                <span class="px-2 py-1 rounded-full bg-slate-800/80"
+                  >Tailwind CSS</span
+                >
+                <span class="px-2 py-1 rounded-full bg-slate-800/80"
+                  >Responsive</span
+                >
+              </div>
+            </div>
+            <div class="mt-4 flex items-center justify-between text-xs">
+              <a href="***" class="text-emerald-400 hover:underline">
+                Voir en ligne
+              </a>
+              <a href="***" class="text-slate-400 hover:underline">
+                Code source
+              </a>
+            </div>
+          </article>
+
+          <!-- Projet 3 -->
+          <article
+            class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-5 flex flex-col justify-between"
+          >
+            <div class="space-y-3">
+              <p class="text-xs uppercase tracking-[0.2em] text-emerald-400/80">
+                Projet d’école *** (optionnel)
+              </p>
+              <h3
+                class="text-base md:text-lg font-semibold group-hover:text-emerald-400 transition"
+              >
+                *** – Tableau de bord de statistiques
+              </h3>
+              <p class="text-sm text-slate-300">
+                *** (description : affichage de données, graphiques, filtres,
+                etc.)
+              </p>
+              <div class="flex flex-wrap gap-2 text-[11px] text-slate-300">
+                <span class="px-2 py-1 rounded-full bg-slate-800/80"
+                  >JavaScript</span
+                >
+                <span class="px-2 py-1 rounded-full bg-slate-800/80"
+                  >API ***</span
+                >
+                <span class="px-2 py-1 rounded-full bg-slate-800/80"
+                  >Charts</span
+                >
+              </div>
+            </div>
+            <div class="mt-4 flex items-center justify-between text-xs">
+              <a href="***" class="text-emerald-400 hover:underline">
+                Voir en ligne
+              </a>
+              <a href="***" class="text-slate-400 hover:underline">
+                Code source
+              </a>
+            </div>
+          </article>
+
+          <!-- Projet 4 -->
+          <article
+            class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-5 flex flex-col justify-between"
+          >
+            <div class="space-y-3">
+              <p class="text-xs uppercase tracking-[0.2em] text-emerald-400/80">
+                Expérimentation
+              </p>
+              <h3
+                class="text-base md:text-lg font-semibold group-hover:text-emerald-400 transition"
+              >
+                *** – Petit jeu / mini app
+              </h3>
+              <p class="text-sm text-slate-300">
+                *** (par ex : “Un petit jeu de mémoire en JavaScript avec
+                système de score et animations.”)
+              </p>
+              <div class="flex flex-wrap gap-2 text-[11px] text-slate-300">
+                <span class="px-2 py-1 rounded-full bg-slate-800/80"
+                  >JavaScript</span
+                >
+                <span class="px-2 py-1 rounded-full bg-slate-800/80"
+                  >CSS / Tailwind</span
+                >
+                <span class="px-2 py-1 rounded-full bg-slate-800/80"
+                  >Animations</span
+                >
+              </div>
+            </div>
+            <div class="mt-4 flex items-center justify-between text-xs">
+              <a href="***" class="text-emerald-400 hover:underline">
+                Voir en ligne
+              </a>
+              <a href="***" class="text-slate-400 hover:underline">
+                Code source
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Autre section optionnelle : "Work in progress" -->
+      <section class="space-y-4">
+        <h2 class="text-lg md:text-xl font-semibold">Work in progress</h2>
+        <p class="text-sm text-slate-300 max-w-2xl">
+          *** (par ex : “Je travaille actuellement sur un projet de ***. Revenez
+          bientôt pour en voir plus !”)
+        </p>
+      </section>
+
+      <!-- Lien de retour -->
+      <section>
+        <a
+          href="index.html"
+          class="inline-flex items-center text-sm text-emerald-400 hover:underline"
+        >
+          ← Retour à la page d’accueil
+        </a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800">
+      <div
+        class="max-w-5xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-slate-500"
+      >
+        <p>© *** – Portfolio.</p>
+        <p>
+          Contact :
+          <a href="mailto:***" class="text-emerald-400 hover:underline">***</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.getElementById("menuBtn");
+      const nav = document.getElementById("mobileNav");
+      if (btn && nav) {
+        btn.addEventListener("click", () => {
+          nav.classList.toggle("hidden");
+        });
+      }
+    </script>
+  </body>
+</html>
